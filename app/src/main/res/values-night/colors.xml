@@ -10,10 +10,10 @@
     <color name="PayoneerColor">#FF4800</color>
 
     <!--<color name="colorPrimaryText">#AF000000</color>-->
-    <color name="colorPrimaryText">#000000</color>
+    <color name="colorPrimaryText">#fff</color>
     <color name="colorSecondaryText">#82000000</color>
     <color name="transparent">#00000000</color>
-    <color name="colorDialog">#fff</color>
+    <color name="colorDialog">#003656</color>
 
     <color name="black_opaq">#7b000000</color>
     <color name="grey">#7BE1E1E1</color>
