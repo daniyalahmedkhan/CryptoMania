@@ -10,6 +10,7 @@ Fetch crypto currency rates free api
 Populate in list  
 SearchView filterable  
 Dark/Light Mode  
+Minimum API 21  
 
 # Architecture
 Using Modern Android Development practices  
@@ -18,6 +19,7 @@ ViewModel Unit Test
 Testable Components  
 
 # How it built
+Architecture  
 Kotlin  
 Retrofit  
 Coroutine  
@@ -26,6 +28,8 @@ Hilt
 Data Binding  
 Material Components  
 Unit Test AndroidJUnit  
+Graceful error handling  
+
 
 ![studio](https://user-images.githubusercontent.com/16830594/134219552-c205c2ea-c4a9-45a0-a009-e25f073a9080.png)
 ![jetpack](https://user-images.githubusercontent.com/16830594/134219559-1bd829eb-4382-4212-97f2-1bcbf0d16903.png)
