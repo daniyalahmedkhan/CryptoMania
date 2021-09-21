@@ -51,4 +51,5 @@ ext {
     arch_lifecycle = "2.2.0"
     dagger_hilt = "2.28-alpha"
     hilt_lifecycle = "1.0.0-alpha01"
+    butterknifeVersion = '10.2.3'
 }

@@ -7,6 +7,21 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/item_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@color/white"
+            android:focusable="false"
+            android:layoutDirection="rtl"
+            android:textCursorDrawable="@null"
+            app:defaultQueryHint="Search Item by Name"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null"
+            app:queryHint="Search Item by Name"
+            app:searchIcon="@drawable/search_icon" />
+
         <com.facebook.shimmer.ShimmerFrameLayout
             android:id="@+id/shimmer_view_container"
             android:layout_width="match_parent"

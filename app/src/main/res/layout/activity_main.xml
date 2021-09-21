@@ -8,21 +8,6 @@
     android:orientation="vertical"
     tools:context=".ui.BaseActivity">
 
-    <!--Title Bar-->
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardElevation="@dimen/_5sdp">
-
-        <com.daniyal.cryptomania.ui.views.Toolbar
-            android:id="@+id/view_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-
-    </androidx.cardview.widget.CardView>
-
-
     <!--Container for Fragments-->
     <FrameLayout
         android:id="@+id/layout_fragment"

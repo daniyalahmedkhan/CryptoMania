@@ -9,6 +9,6 @@ import retrofit2.http.Query
 interface RetrofitInterface {
 
     @GET(Constants.CryptoRatesEndPoint)
-    suspend fun getTodo(@Query("access_key") key: String) : Response<CryptoRates>;
+    suspend fun getTodo() : Response<List<CryptoRates>>;
 
 }

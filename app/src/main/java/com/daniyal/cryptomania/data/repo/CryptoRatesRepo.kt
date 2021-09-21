@@ -6,10 +6,10 @@ import com.daniyal.cryptomania.utilities.Constants
 import retrofit2.Response
 import javax.inject.Inject
 
-class CryptoRatesRepo @Inject constructor(private val baseApiInterface: RetrofitInterface) {
+open class CryptoRatesRepo @Inject constructor(private val baseApiInterface: RetrofitInterface) {
 
-    suspend fun getCryptoRatesFromServer(): Response<CryptoRates> {
-        return baseApiInterface.getTodo(Constants.ACCESS_KEY)
+    suspend fun getCryptoRatesFromServer(): Response<List<CryptoRates>> {
+        return baseApiInterface.getTodo()
     }
 
 }

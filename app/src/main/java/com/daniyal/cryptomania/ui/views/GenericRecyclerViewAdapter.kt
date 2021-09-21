@@ -27,8 +27,7 @@ abstract class  GenericRecyclerViewAdapter<T> : RecyclerView.Adapter<RecyclerVie
 
 //    public abstract int getLayoutView();
 
-    //    public abstract int getLayoutView();
-    abstract fun setViewHolder(parent: ViewGroup?): RecyclerView.ViewHolder
+
 
     abstract fun onBindData(holder: RecyclerView.ViewHolder?, `val`: T?, position: Int)
 
@@ -179,6 +178,9 @@ abstract class  GenericRecyclerViewAdapter<T> : RecyclerView.Adapter<RecyclerVie
         }
         return results
     }
+
+    //    public abstract int getLayoutView();
+    abstract fun setViewHolder(parent: ViewGroup?): RecyclerView.ViewHolder
 
 
 }

@@ -1,40 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:weightSum="5"
-        android:padding="@dimen/_10sdp">
+        android:padding="@dimen/_12sdp"
+        android:weightSum="5">
 
         <ImageView
+            android:id="@+id/iv_coin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:src="@android:drawable/btn_radio" />
+            android:src="@drawable/coin_icon" />
 
         <TextView
+            android:id="@+id/tv_currency_name"
             style="@style/TextSubheading"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:gravity="center"
-            android:text="ADA Coin" />
+            android:gravity="left"
+            android:textColor="@color/colorSecondaryText" />
 
 
         <TextView
+            android:id="@+id/tv_currency_rates"
             style="@style/ToolBarHeading"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2.5"
-            android:gravity="center"
-            android:text="0.0369" />
-
+            android:ellipsize="marquee"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/colorLineChart" />
 
     </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSecondaryText" />
+
+</LinearLayout>

@@ -97,5 +97,9 @@ class GeneralHelper {
             val date = formatter.parse(dateTime) as Date
             return date.getTime()
         }
+
+        fun limitDecimal(number: String): String {
+            return String.format("%.5f", number.toInt())
+        }
     }
 }

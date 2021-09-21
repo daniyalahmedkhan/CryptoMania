@@ -1,7 +1,5 @@
 <resources>
-    <string name="app_name">CryptoMania</string>
-
-    <string name="toolbar_title">Payment Methods</string>
+    <string name="app_name">Crypto Mania</string>
 
 
     <!--    API RESPONSE CODE ERROR MESSAGES-->
@@ -15,20 +13,8 @@
     <string name="generalError">Something went wrong. Sorry for the inconvenience</string>
 
 
-    <!--    DUMMY CARD LOGO IN CASE OF NO LOGO ICON-->
-    <string name="dummyCard">https://www.clipartmax.com/png/middle/110-1105004_credit-card-free-icon-credit-card-flat-png.png</string>
-
-
-    <string name="DebitCard">Debit Card</string>
-    <string name="CreditCard">Credit Card</string>
-    <string name="OnlineBankTransfer">Online Bank Transfer</string>
-    <string name="OpenInvoice">Open Invoice</string>
-    <string name="Wallet">Wallet</string>
-    <string name="DirectDebit">Direct Debit</string>
-    <string name="Others">Others"</string>
-
-
-
     <string name="WentWrong">Something Went Wrong. Try Again Later"</string>
     <string name="NoInternet">No Internet Connectivity"</string>
+
+
 </resources>

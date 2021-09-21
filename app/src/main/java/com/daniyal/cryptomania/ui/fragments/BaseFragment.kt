@@ -1,50 +1,25 @@
 package com.daniyal.cryptomania.ui.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.daniyal.cryptomania.ui.BaseActivity
-import com.daniyal.cryptomania.ui.views.Toolbar
 import com.facebook.shimmer.ShimmerFrameLayout
 
-abstract class BaseFragment<T : ViewDataBinding, VM : ViewModel> : Fragment() {
+abstract class BaseFragment : Fragment() {
 
-    protected lateinit var binding: T
-    protected lateinit var viewModel: VM
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        binding = DataBindingUtil.inflate(
-            inflater,
-            getFragmentView(),
-            container,
-            false
-        )
-
-        viewModel = ViewModelProvider(this).get(getViewModel())
-        return binding.root
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
     }
 
     override fun onResume() {
         super.onResume()
-        // setTitleBar(getBaseActivity().getToolbar())
     }
 
-    /* Toolbar */
-    protected abstract fun setTitleBar(toolbar: Toolbar?)
 
     /* Get BaseActivity */
     protected fun getBaseActivity(): BaseActivity? {
@@ -67,9 +42,9 @@ abstract class BaseFragment<T : ViewDataBinding, VM : ViewModel> : Fragment() {
         myRecyclerView.itemAnimator = DefaultItemAnimator()
     }
 
-    abstract fun getFragmentView(): Int
-
-    abstract fun getViewModel(): Class<VM>
+//    abstract fun getFragmentView(): Int
+//
+//    abstract fun getViewModel(): Class<VM>
 
     /*
      * To show shimmer effect on loading

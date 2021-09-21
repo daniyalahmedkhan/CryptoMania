@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.animation.AlphaAnimation
 import androidx.appcompat.app.AppCompatActivity
 import com.daniyal.cryptomania.R
-import com.daniyal.cryptomania.ui.fragments.BaseFragment
 import com.daniyal.cryptomania.ui.fragments.CryptoListFragment
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -59,6 +58,11 @@ class BaseActivity : AppCompatActivity() {
         } else {
             super.onBackPressed()
         }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        popFragment()
     }
 
 }
