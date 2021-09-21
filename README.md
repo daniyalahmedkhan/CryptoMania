@@ -36,5 +36,8 @@ Graceful error handling
 ![kotlin](https://user-images.githubusercontent.com/16830594/134219560-a155c25a-b2d0-4f65-92cd-585fb9b5b5fb.png)
 ![summary](https://user-images.githubusercontent.com/16830594/134219557-c1272c53-d31a-49b4-9203-c7d97212f58f.png)
 
+# API
+https://syncwith.com/api/binance/get/api-v1-ticker-allPrices
+
 # APK Url (Drive)
 https://drive.google.com/file/d/1gHyNzAUdN-NPJTRXR0Z_QlYKqkaZ1z9y/view?usp=sharing  
