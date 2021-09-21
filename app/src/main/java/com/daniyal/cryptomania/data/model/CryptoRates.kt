@@ -1,3 +1,5 @@
+package com.daniyal.cryptomania.data.model
+
 import com.google.gson.annotations.SerializedName
 
 data class CryptoRates(

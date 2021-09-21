@@ -11,7 +11,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class BaseActivity : AppCompatActivity() {
 
-    protected var baseFragment: BaseFragment? = null
+    protected var baseFragment: CryptoListFragment? = null
     val KEY_FRAG_FIRST = "firstFrag"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +38,7 @@ class BaseActivity : AppCompatActivity() {
      *
      * @param frag
      */
-    fun addDockableFragment(frag: BaseFragment) {
+    fun addDockableFragment(frag: CryptoListFragment) {
         val animation1 = AlphaAnimation(0.2f, 1.0f)
         animation1.duration = 1000
         animation1.startOffset = 5000
