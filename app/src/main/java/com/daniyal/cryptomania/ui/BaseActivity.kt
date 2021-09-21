@@ -5,6 +5,7 @@ import android.view.animation.AlphaAnimation
 import androidx.appcompat.app.AppCompatActivity
 import com.daniyal.cryptomania.R
 import com.daniyal.cryptomania.ui.fragments.BaseFragment
+import com.daniyal.cryptomania.ui.fragments.CryptoListFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -16,6 +17,12 @@ class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        initFragment()
+    }
+
+    private fun initFragment() {
+        val cryptoListFragment = CryptoListFragment();
+        addDockableFragment(cryptoListFragment)
     }
 
     override fun onPause() {
